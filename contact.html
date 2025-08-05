@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Style Society Cars - Contacto</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Style Society Cars</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="services.html">Servicios</a></li>
+        <li><a href="gallery.html">Galería</a></li>
+        <li><a href="shop.html">Tienda</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<section class="contact-section container">
+  <h1>Contacto</h1>
+  <p>📍 Madrid, España</p>
+  <p>📸 Instagram: <a href="https://instagram.com/stylesociety.cars" target="_blank" rel="noopener noreferrer">@stylesociety.cars</a></p>
+  <p>✉️ Email: <a href="mailto:info@stylesocietycars.com">info@stylesocietycars.com</a></p>
+  <form id="contact-form">
+    <label for="name">Nombre:</label><br />
+    <input type="text" id="name" name="name" required /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" required /><br />
+
+    <label for="message">Mensaje:</label><br />
+    <textarea id="message" name="message" rows="5" required></textarea><br />
+
+    <button type="submit" class="btn-primary">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Style Society Cars. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Gracias por contactarnos. Te responderemos pronto.');
+    this.reset();
+  });
+</script>
+</body>
+</html>
+
+
